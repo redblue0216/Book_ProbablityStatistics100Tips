@@ -1,0 +1,10 @@
+[book]
+authors = ["redblue0216"]
+language = "en"
+multilingual = false
+src = "src"
+title = "概率统计100问"
+
+[output.html]
+mathjax-support = true
+git-repository-url = "https://github.com/redblue0216/Cuber"
