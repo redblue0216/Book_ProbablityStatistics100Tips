@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>简介 - 概率统计100问</title>
+        <title>NO.2.tip： 矩估计 - 概率统计100问</title>
 
 
         <!-- Custom HTML head -->
@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="简介.html" class="active">简介</a></li><li class="chapter-item expanded affix "><a href="条件期望.html">NO.1.tip: 条件期望</a></li><li class="chapter-item expanded affix "><a href="矩估计.html">NO.2.tip： 矩估计</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="简介.html">简介</a></li><li class="chapter-item expanded affix "><a href="条件期望.html">NO.1.tip: 条件期望</a></li><li class="chapter-item expanded affix "><a href="矩估计.html" class="active">NO.2.tip： 矩估计</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -147,21 +147,35 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
-<p>这是一本概率统计进阶版本的知识点理解书籍，相关内容基于作者个人学习工作中的理解整理。各位读者如有相关问题和建议可以在相应的github库中以issue形式提交，作者欢迎各种批评指正，但鉴于个人时间有限，目前更新周期不定，请谅解。作者个人详情可登录作者的<a href="https://shihua.netlify.app">个人网站</a>了解</p>
-<h1 id="contributing"><a class="header" href="#contributing">Contributing</a></h1>
-<p>本电子书可以在作者的个人github上找到相关源码，社区维护依赖于issue，具体修正由作者本人管理操作。</p>
-<h1 id="license"><a class="header" href="#license">License</a></h1>
-<p>本书开源代码和文档使用GPLv3协议，商业用途必须联系作者，否则自负相关法律责任。Copyright by 施华。</p>
+                        <h1 id="no2tip-矩估计"><a class="header" href="#no2tip-矩估计">NO.2.tip: 矩估计</a></h1>
+<h2 id="背景"><a class="header" href="#背景">背景</a></h2>
+<p>  矩法也许是最早的求点估计量的方法，至少可以追溯到19世纪末的KarlPearson。此法的优点是使用很简单，从而几乎总是可以求出估计值。尽管令人遗憾的是在很多情况下，矩法导出的估计量还需要改进，但是在其他方法难以实施的时候，它仍然不失为一个很好的工作起点。另外，它也可以作为其他需要循环几次的算法的初始值。</p>
+<h2 id="源与流"><a class="header" href="#源与流">源与流</a></h2>
+<p>  设\(X_{1},...,X_{n}\)是来\(f(x|\theta_{1},...,\theta_{n})\)为其概率密度函数的总体的样本。矩法估计量这样得到的：令前\(k\)阶的样本句子矩与相应的前\(k\)阶总体矩相等，这样就得到一个联立方程组，求解之，就得到矩统计量。更清楚地说，我们定义
+\begin{cases}
+m_{1}=\frac{1}{n}\sum_{i=1}^{n}X_{i}^{'},\mu_{1}^{'}=EX^{'},\\
+m_{2}=\frac{1}{n}\sum_{i=1}^{n}X_{i}^{2},\mu_{2}^{'}=EX^{2},\\
+...\\
+m_{k}=\frac{1}{n}\sum_{i=1}^{n}X_{i}^{k},\mu_{k}^{'}=EX^{k},
+\end{cases}</p>
+<p>  在典型的情况下，总体矩\(\mu_{j}^{'}\)是参数\(\theta_{1},...,\theta_{k}\)的一个函数，可以记作\(\mu_{j}^{'}\)。于是\((\theta_{1},...,\theta_{k})\)的矩法估计量\((\tilde{\theta_{1}},...,\tilde{\theta_{k}})\)就可以通过求解下面的关于\((\theta_{1},...,\theta_{k})\)的方程组
+\begin{cases}
+m_{1} = \mu_{1}^{'}(\theta_{1},...,\theta_{k}),\\<br />
+m_{2} = \mu_{2}^{'}(\theta_{1},...,\theta_{k}),\\<br />
+...\\
+m_{k} = \mu_{k}^{'}(\theta_{1},...,\theta_{k}),\\<br />
+\end{cases}
+得到。</p>
+<p>  值得一提的是，在计量经济学的世界中，矩法已是大名鼎鼎的明星。它是工具变量法（Instrumental Variable,IV）和广义矩估计法（Generalized Moment Method,GMM）的基础。在矩估计法中关键是利用了由随机干扰项的条件均值零假设所推出的非条件零均值特性，以及随机干扰项各解释变量间同期不相关特性\[E(X_{i}^{'}\mu_{i})=0\]作为总体矩条件。如果某个解释变量与随机干扰项相关，只要能找到1个工具变量，仍然可以构成一组矩条件，这就是工具变量法。如果存在大于\(k+1\)个变量与随机干扰项不相关，可以构成一组包含大于\(k+1\)个方程的矩条件，这就是广义矩估计法。</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-
-                            <a rel="next" href="条件期望.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
+                            <a rel="prev" href="条件期望.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
                             </a>
+
 
                         <div style="clear: both"></div>
                     </nav>
@@ -169,10 +183,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-
-                    <a rel="next" href="条件期望.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
+                    <a rel="prev" href="条件期望.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
                     </a>
+
             </nav>
 
         </div>

@@ -84,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="简介.html">简介</a></li><li class="chapter-item expanded affix "><a href="条件期望.html">NO.1.tip: 条件期望</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="简介.html">简介</a></li><li class="chapter-item expanded affix "><a href="条件期望.html">NO.1.tip: 条件期望</a></li><li class="chapter-item expanded affix "><a href="矩估计.html">NO.2.tip： 矩估计</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -174,6 +174,26 @@
   (2) 正交投影算子的作用是可逆的，双向投影结果完全一致。</p>
 <p>  条件期望正因它具有如此良好的性质，才让我们在许多场景中使用它来建模现实。那么，接下来问题来了，我们如何明确一个条件期望呢？换一个角度思考条件期望，比如\( E(X|Y) \)，在观察\( Y \)之前，并不知道\( E(X|Y=y) \)的值，所以条件期望本质上是一种随机变量。循着这个思路，我们知道，为了确定一个随机变量，我们往往需要对其概率分布建模，而在统计学中，我们通常会假设样本来自一个给定的\( f(X|\Theta) \)。我们将这样的函数称为概率密度函数，然后采用各种方法去估计参数\( \Theta \)。由此引出一个关键概念——估计量，对于这个估计量，有多种方法求得。常见的方法有矩估计、极大似然估计、贝叶斯估计和EM算法。</p>
 <p>  在此，故事已开始，精彩待纷呈。后续，我们会开始进入到估计量的四大估计方法的传奇旅程。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="no2tip-矩估计"><a class="header" href="#no2tip-矩估计">NO.2.tip: 矩估计</a></h1>
+<h2 id="背景-1"><a class="header" href="#背景-1">背景</a></h2>
+<p>  矩法也许是最早的求点估计量的方法，至少可以追溯到19世纪末的KarlPearson。此法的优点是使用很简单，从而几乎总是可以求出估计值。尽管令人遗憾的是在很多情况下，矩法导出的估计量还需要改进，但是在其他方法难以实施的时候，它仍然不失为一个很好的工作起点。另外，它也可以作为其他需要循环几次的算法的初始值。</p>
+<h2 id="源与流-1"><a class="header" href="#源与流-1">源与流</a></h2>
+<p>  设\(X_{1},...,X_{n}\)是来\(f(x|\theta_{1},...,\theta_{n})\)为其概率密度函数的总体的样本。矩法估计量这样得到的：令前\(k\)阶的样本句子矩与相应的前\(k\)阶总体矩相等，这样就得到一个联立方程组，求解之，就得到矩统计量。更清楚地说，我们定义
+\begin{cases}
+m_{1}=\frac{1}{n}\sum_{i=1}^{n}X_{i}^{'},\mu_{1}^{'}=EX^{'},\\
+m_{2}=\frac{1}{n}\sum_{i=1}^{n}X_{i}^{2},\mu_{2}^{'}=EX^{2},\\
+...\\
+m_{k}=\frac{1}{n}\sum_{i=1}^{n}X_{i}^{k},\mu_{k}^{'}=EX^{k},
+\end{cases}</p>
+<p>  在典型的情况下，总体矩\(\mu_{j}^{'}\)是参数\(\theta_{1},...,\theta_{k}\)的一个函数，可以记作\(\mu_{j}^{'}\)。于是\((\theta_{1},...,\theta_{k})\)的矩法估计量\((\tilde{\theta_{1}},...,\tilde{\theta_{k}})\)就可以通过求解下面的关于\((\theta_{1},...,\theta_{k})\)的方程组
+\begin{cases}
+m_{1} = \mu_{1}^{'}(\theta_{1},...,\theta_{k}),\\<br />
+m_{2} = \mu_{2}^{'}(\theta_{1},...,\theta_{k}),\\<br />
+...\\
+m_{k} = \mu_{k}^{'}(\theta_{1},...,\theta_{k}),\\<br />
+\end{cases}
+得到。</p>
+<p>  值得一提的是，在计量经济学的世界中，矩法已是大名鼎鼎的明星。它是工具变量法（Instrumental Variable,IV）和广义矩估计法（Generalized Moment Method,GMM）的基础。在矩估计法中关键是利用了由随机干扰项的条件均值零假设所推出的非条件零均值特性，以及随机干扰项各解释变量间同期不相关特性\[E(X_{i}^{'}\mu_{i})=0\]作为总体矩条件。如果某个解释变量与随机干扰项相关，只要能找到1个工具变量，仍然可以构成一组矩条件，这就是工具变量法。如果存在大于\(k+1\)个变量与随机干扰项不相关，可以构成一组包含大于\(k+1\)个方程的矩条件，这就是广义矩估计法。</p>
 
                     </main>
 
@@ -192,22 +212,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
