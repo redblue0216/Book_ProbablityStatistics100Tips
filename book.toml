@@ -5,6 +5,10 @@ multilingual = false
 src = "src"
 title = "概率统计100问"
 
+
+[preprocessor.katex]
+after = ["links"]
+
+
 [output.html]
-mathjax-support = true
 git-repository-url = "https://github.com/redblue0216/Book_ProbablityStatistics100Tips"
