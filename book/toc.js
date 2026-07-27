@@ -8,7 +8,7 @@ class MDBookSidebarScrollbox extends HTMLElement {
         super();
     }
     connectedCallback() {
-        this.innerHTML = '<ol class="chapter"><li class="chapter-item expanded affix "><a href="简介.html">简介</a></li><li class="chapter-item expanded affix "><a href="条件期望.html">NO.1.tip: 条件期望</a></li><li class="chapter-item expanded affix "><a href="矩估计.html">NO.2.tip： 矩估计</a></li><li class="chapter-item expanded affix "><a href="最大似然估计.html">NO.3.tip： 最大似然估计</a></li><li class="chapter-item expanded affix "><a href="贝叶斯估计.html">NO.4.tip： 贝叶斯估计</a></li><li class="chapter-item expanded affix "><a href="变分推理.html">NO.5.tip： 变分推理</a></li><li class="chapter-item expanded affix "><a href="马尔可夫链蒙特卡洛方法.html">NO.6.tip： 马尔可夫链蒙特卡罗方法</a></li></ol>';
+        this.innerHTML = '<ol class="chapter"><li class="chapter-item expanded affix "><a href="简介.html">简介</a></li><li class="chapter-item expanded affix "><a href="条件期望.html">NO.1.tip: 条件期望</a></li><li class="chapter-item expanded affix "><a href="矩估计.html">NO.2.tip： 矩估计</a></li><li class="chapter-item expanded affix "><a href="最大似然估计.html">NO.3.tip： 最大似然估计</a></li><li class="chapter-item expanded affix "><a href="贝叶斯估计.html">NO.4.tip： 贝叶斯估计</a></li><li class="chapter-item expanded affix "><a href="变分推理.html">NO.5.tip： 变分推理</a></li><li class="chapter-item expanded affix "><a href="马尔可夫链蒙特卡洛方法.html">NO.6.tip： 马尔可夫链蒙特卡罗方法</a></li><li class="chapter-item expanded affix "><a href="指数族分布.html">NO.7.tip： 指数族分布</a></li></ol>';
         // Set the current, active page, and reveal it if it's hidden
         let current_page = document.location.href.toString().split("#")[0];
         if (current_page.endsWith("/")) {
