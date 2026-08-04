@@ -10,4 +10,4 @@
 [NO.7.tip： 指数族分布](./指数族分布.md)
 [NO.8.tip： 核密度估计](./核密度估计.md)
 [NO.9.tip： K近邻密度估计](./K近邻密度估计.md)
-[NO.10.tip： AIC/BIC准则](./AIC和BIC准则.md)
+[NO.10.tip： AIC和BIC准则](./AIC和BIC准则.md)
