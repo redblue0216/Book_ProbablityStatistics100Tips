@@ -15,7 +15,8 @@
 + NO.7.tip： 指数族分布
 + NO.8.tip： 核密度估计
 + NO.9.tip： K近邻密度估计
-
++ NO.10.tip: AIC和BIC准则
+  
 ## Contributing
 本电子书可以在作者的个人github上找到相关源码，社区维护依赖于issue，具体修正由作者本人管理操作。
 
