@@ -12,3 +12,4 @@
 [NO.9.tip： K近邻密度估计](./K近邻密度估计.md)
 [NO.10.tip： AIC和BIC准则](./AIC和BIC准则.md)
 [NO.11.tip： 假设检验](./假设检验.md)
+[NO.12.tip： Wald检验](./Wald检验.md)

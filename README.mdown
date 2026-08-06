@@ -6,16 +6,18 @@
 这是一本概率统计进阶版本的知识点理解书籍，相关内容基于作者个人学习工作中的理解整理。各位读者如有相关问题和建议可以在相应的github库中以issue形式提交，作者欢迎各种批评指正，但鉴于个人时间有限，目前更新周期不定，请谅解。作者个人详情可登录作者的[个人网站](https://shihua.netlify.app)了解
 
 ## Contents
-+ NO.1.tip： 条件期望
-+ NO.2.tip： 矩估计
-+ NO.3.tip： 最大似然估计
-+ N0.4.tip： 贝叶斯估计
-+ NO.5.tip： 变分推理
-+ NO.6.tip： 马尔可夫链蒙特卡洛方法
-+ NO.7.tip： 指数族分布
-+ NO.8.tip： 核密度估计
-+ NO.9.tip： K近邻密度估计
-+ NO.10.tip: AIC和BIC准则
++ NO.1.tip：  条件期望
++ NO.2.tip：  矩估计
++ NO.3.tip：  最大似然估计
++ N0.4.tip：  贝叶斯估计
++ NO.5.tip：  变分推理
++ NO.6.tip：  马尔可夫链蒙特卡洛方法
++ NO.7.tip：  指数族分布
++ NO.8.tip：  核密度估计
++ NO.9.tip：  K近邻密度估计
++ NO.10.tip： AIC和BIC准则
++ NO.11.tip： 假设检验
++ NO.12.tip： Wald检验
   
 ## Contributing
 本电子书可以在作者的个人github上找到相关源码，社区维护依赖于issue，具体修正由作者本人管理操作。
