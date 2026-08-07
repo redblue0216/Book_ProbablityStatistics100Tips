@@ -18,6 +18,7 @@
 + NO.10.tip： AIC和BIC准则
 + NO.11.tip： 假设检验
 + NO.12.tip： Wald检验
++ NO.13.tip： 似然比检验
   
 ## Contributing
 本电子书可以在作者的个人github上找到相关源码，社区维护依赖于issue，具体修正由作者本人管理操作。
