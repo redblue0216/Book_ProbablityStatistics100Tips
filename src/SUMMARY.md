@@ -15,3 +15,4 @@
 [NO.12.tip： Wald检验](./Wald检验.md)
 [NO.13.tip： 似然比检验](./似然比检验.md)
 [NO.14.tip： 置信区间](./置信区间.md)
+[NO.15.tip： EM算法](./EM算法.md)
