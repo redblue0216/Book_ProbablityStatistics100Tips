@@ -22,6 +22,7 @@
 + NO.14.tip： 置信区间
 + NO.15.tip： EM算法
 + NO.16.tip： KL散度
++ NO.17.tip： 马尔可夫链
   
 ## Contributing
 本电子书可以在作者的个人github上找到相关源码，社区维护依赖于issue，具体修正由作者本人管理操作。
