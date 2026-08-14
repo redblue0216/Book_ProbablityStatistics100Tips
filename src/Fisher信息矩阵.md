@@ -68,7 +68,7 @@ $$
 0 = \int \frac{\partial}{\partial \boldsymbol{\theta}} p(\mathbf{x} \mid \boldsymbol{\theta}) \, d\mathbf{x} = \int \left[ \frac{\partial}{\partial \boldsymbol{\theta}} \log p(\mathbf{x} \mid \boldsymbol{\theta}) \right] p(\mathbf{x} \mid \boldsymbol{\theta}) \, d\mathbf{x} = \mathbb{E}[\mathbf{s}(\boldsymbol{\theta})] \tag{9}
 $$
 
-&emsp;&emsp;接下来，我们回到主定理的证明。为了简单起见，我们将主要讨论标量情况，遵循在文献 [Rick95, p263] 中的表述。
+&emsp;&emsp;接下来，我们回到主定理的证明。为了简单起见，我们将主要讨论标量情况。
 
 **证明** 
 
