@@ -38,14 +38,14 @@ $$
 
 &emsp;&emsp;更确切地说，我们有以下定理。
 
-&gt; 定理：如果 $\log p(\mathbf{x} \mid \boldsymbol{\theta})$ 是二阶可微的，则在一定的正则性条件下，Fisher 信息矩阵等于负对数似然的期望黑塞矩阵，即
+> 定理：如果 $\log p(\mathbf{x} \mid \boldsymbol{\theta})$ 是二阶可微的，则在一定的正则性条件下，Fisher 信息矩阵等于负对数似然的期望黑塞矩阵，即
 $$
 \boldsymbol{F}(\boldsymbol{\theta})_{ij} \triangleq \mathbb{E}_{\mathbf{x} \sim \boldsymbol{\theta}} \left[ \left( \frac{\partial}{\partial \theta_i} \log p(\mathbf{x} \mid \boldsymbol{\theta}) \right) \left( \frac{\partial}{\partial \theta_j} \log p(\mathbf{x} \mid \boldsymbol{\theta}) \right) \right] = \mathbb{E}_{\mathbf{x} \sim \boldsymbol{\theta}} \left[ \frac{\partial^2}{\partial \theta_i \theta_j} \log p(\mathbf{x} \mid \boldsymbol{\theta}) \right] \tag{5}
 $$
 
 &emsp;&emsp;在证明这个定理之前，我们先引入以下重要引理。
 
-&gt; 引理：得分函数的期望值为零。即
+> 引理：得分函数的期望值为零。即
 $$
 \mathbb{E}_{p(\mathbf{x} \mid \boldsymbol{\theta})} \left[ \nabla \log p(\mathbf{x} \mid \boldsymbol{\theta}) \right] = \mathbf{0} \tag{6}
 $$
