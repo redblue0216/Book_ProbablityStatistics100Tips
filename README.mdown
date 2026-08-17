@@ -26,6 +26,7 @@
 + NO.18.tip： Fisher信息矩阵
 + NO.19.tip： 状态空间模型
 + NO.20.tip： 卡尔曼滤波
++ NO.21.tip： 泊松过程
   
 ## Contributing
 本电子书可以在作者的个人github上找到相关源码，社区维护依赖于issue，具体修正由作者本人管理操作。
