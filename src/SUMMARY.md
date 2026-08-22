@@ -26,3 +26,4 @@
 [NO.23.tip： Mercer核](./Mercer核.md)
 [NO.24.tip： 高斯过程](./高斯过程.md)
 [NO.25.tip： 诱导点近似](./诱导点近似.md)
+[NO.26.tip： 互信息](./互信息.md)
