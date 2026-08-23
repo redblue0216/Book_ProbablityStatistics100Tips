@@ -32,6 +32,7 @@
 + NO.24.tip： 高斯过程
 + NO.25.tip： 诱导点近似
 + NO.26.tip： 互信息
++ NO.27.tip： 共轭先验
   
 ## Contributing
 本电子书可以在作者的个人github上找到相关源码，社区维护依赖于issue，具体修正由作者本人管理操作。
