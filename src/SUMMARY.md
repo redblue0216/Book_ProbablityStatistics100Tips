@@ -33,3 +33,4 @@
 [NO.30.tip： 线性回归](./线性回归.md)
 [NO.31.tip： 逻辑回归](./逻辑回归.md)
 [NO.32.tip： Probit回归](./Probit回归.md)
+[NO.33.tip： 边界优化](./边界优化.md)

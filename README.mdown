@@ -38,6 +38,7 @@
 + NO.30.tip： 线性回归
 + NO.31.tip： 逻辑回归
 + NO.32.tip： Probit回归
++ NO.33.tip： 边界优化
   
 ## Contributing
 本电子书可以在作者的个人github上找到相关源码，社区维护依赖于issue，具体修正由作者本人管理操作。
