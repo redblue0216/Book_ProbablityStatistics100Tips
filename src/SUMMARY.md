@@ -43,3 +43,4 @@
 [NO.40.tip： 随机变量的收敛](./随机变量的收敛.md)
 [NO.41.tip： bootstrap方法](./bootstrap方法.md)
 [NO.42.tip： 经典决策树算法](./经典决策树算法.md)
+[NO.43.tip： 决策树剪枝](./决策树剪枝.md)
