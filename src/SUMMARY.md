@@ -44,3 +44,4 @@
 [NO.41.tip： bootstrap方法](./bootstrap方法.md)
 [NO.42.tip： 经典决策树算法](./经典决策树算法.md)
 [NO.43.tip： 决策树剪枝](./决策树剪枝.md)
+[NO.44.tip： 随机森林](./随机森林.md)
