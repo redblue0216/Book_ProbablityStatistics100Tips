@@ -46,3 +46,4 @@
 [NO.43.tip： 决策树剪枝](./决策树剪枝.md)
 [NO.44.tip： 随机森林](./随机森林.md)
 [NO.45.tip： 提升法与堆叠法](./提升法与堆叠法.md)
+[NO.46.tip： XGBoost](./XGBoost.md)

@@ -51,6 +51,7 @@
 + NO.43.tip： 决策树剪枝
 + NO.44.tip： 随机森林
 + NO.45.tip： 提升法与堆叠法
++ NO.46.tip： XGBoost
   
 ## Contributing
 本电子书可以在作者的个人github上找到相关源码，社区维护依赖于issue，具体修正由作者本人管理操作。
