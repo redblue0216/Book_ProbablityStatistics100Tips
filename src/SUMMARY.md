@@ -47,3 +47,4 @@
 [NO.44.tip： 随机森林](./随机森林.md)
 [NO.45.tip： 提升法与堆叠法](./提升法与堆叠法.md)
 [NO.46.tip： XGBoost](./XGBoost.md)
+[NO.47.tip： LightGBM](./LightGBM.md)
