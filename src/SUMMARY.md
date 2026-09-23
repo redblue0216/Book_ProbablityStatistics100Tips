@@ -48,3 +48,4 @@
 [NO.45.tip： 提升法与堆叠法](./提升法与堆叠法.md)
 [NO.46.tip： XGBoost](./XGBoost.md)
 [NO.47.tip： LightGBM](./LightGBM.md)
+[NO.48.tip： 自动微分](./自动微分.md)
