@@ -49,3 +49,4 @@
 [NO.46.tip： XGBoost](./XGBoost.md)
 [NO.47.tip： LightGBM](./LightGBM.md)
 [NO.48.tip： 自动微分](./自动微分.md)
+[NO.49.tip： 深度神经网络的组件](./深度神经网络的组件.md)
