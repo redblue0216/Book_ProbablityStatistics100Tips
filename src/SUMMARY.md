@@ -52,3 +52,4 @@
 [NO.49.tip： 深度神经网络的组件](./深度神经网络的组件.md)
 [NO.50.tip： 深度神经网络的正则化](./深度神经网络的正则化.md)
 [NO.51.tip： 卷积过滤器](./卷积过滤器.md)
+[NO.52.tip： Transformer](./Transformer.md)
