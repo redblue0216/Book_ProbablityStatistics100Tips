@@ -53,3 +53,4 @@
 [NO.50.tip： 深度神经网络的正则化](./深度神经网络的正则化.md)
 [NO.51.tip： 卷积过滤器](./卷积过滤器.md)
 [NO.52.tip： Transformer](./Transformer.md)
+[NO.53.tip： 非线性潜变量模型](./非线性潜变量模型.md)
