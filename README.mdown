@@ -59,6 +59,7 @@
 + NO.51.tip： 卷积过滤器
 + NO.52.tip： Transformer
 + NO.53.tip： 非线性潜变量模型
++ NO.54.tip： 变分自编码模型
   
 ## Contributing
 本电子书可以在作者的个人github上找到相关源码，社区维护依赖于issue，具体修正由作者本人管理操作。

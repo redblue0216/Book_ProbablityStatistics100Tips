@@ -54,3 +54,4 @@
 [NO.51.tip： 卷积过滤器](./卷积过滤器.md)
 [NO.52.tip： Transformer](./Transformer.md)
 [NO.53.tip： 非线性潜变量模型](./非线性潜变量模型.md)
+[NO.54.tip： 变分自编码模型](./变分自编码模型.md)
